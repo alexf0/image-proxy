@@ -1,4 +1,4 @@
-Загрузить Dep для vendor
+Загрузить Dep для vendor (https://golang.github.io/dep/docs/installation.html)
 
 ```go get -u github.com/golang/dep/cmd/dep```
 

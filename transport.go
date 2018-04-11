@@ -80,7 +80,7 @@ func encodeResponse(ctx context.Context, w http.ResponseWriter, response interfa
 
 		w.Header().Set("Etag", generateEtag)
 		w.Header().Set("Expires", time.Now().Add(time.Hour).Format(http.TimeFormat))
-		w.Header().Set("Cache-Control", fmt.Sprintf("max-age=%d, public", 2592000))
+		w.Header().Set("Cache-Control", fmt.Sprintf("max-age=%d, public", 3600))
 
 		if val := ctx.Value("etag"); val != nil {
 			etag := val.(string)
